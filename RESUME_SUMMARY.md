@@ -44,7 +44,7 @@
 ### Admin Dashboard & Analytics
 - **Real-Time Analytics Dashboard**: Created interactive admin dashboard with Chart.js visualizations displaying application trends, user registration metrics, and company verification statistics
 - **Application Management**: Built administrative interface for monitoring all internship applications, managing company verifications, and viewing user/company activity logs
-- **Database Views**: Utilized PostgreSQL/SQLite views for optimized query performance in generating application summaries and statistics
+- **Database Views**: Utilized SQLite views for optimized query performance in generating application summaries and statistics
 
 ### Additional Technical Features
 - **File Management System**: Implemented secure file upload/download system for resumes, cover letters, and business permits with private storage and access control
@@ -56,14 +56,14 @@
 ## 4. Resume Bullet Points
 
 ### Option 1: Full-Stack Focus
-- **Developed a full-stack Internship Management Platform** using Laravel 11 and Vue.js 3 with Inertia.js, serving three distinct user roles (Students, Companies, Admins) with role-based authentication and authorization, managing 1000+ potential user interactions across 20+ database tables with optimized queries
+- **Developed a full-stack Internship Management Platform** using Laravel 11 and Vue.js 3 with Inertia.js, serving three distinct user roles (Students, Companies, Admins) with role-based authentication and authorization, implementing 30+ routes across 7 database tables with optimized relationship queries
   
 - **Engineered a comprehensive application workflow system** featuring secure file uploads (resume/cover letter storage), automated status tracking, and real-time email notifications using Laravel's notification system, reducing application processing time by implementing efficient queue management
 
 - **Implemented OAuth 2.0 authentication** with Google Sign-In using Laravel Socialite, alongside custom multi-guard authentication supporting three user types, with session management and CSRF protection ensuring secure access control across the platform
 
 ### Option 2: Backend/Architecture Focus
-- **Architected a multi-tenant web application** using Laravel 11's MVC pattern with three separate authentication guards, implementing role-based access control, database views for optimized reporting, and 20+ migrations managing complex relationships between users, companies, internships, and applications
+- **Architected a multi-tenant web application** using Laravel 11's MVC pattern with three separate authentication guards, implementing role-based access control, database views for optimized reporting, and 21 migrations managing complex relationships between users, companies, internships, and applications
 
 - **Built RESTful API endpoints** for internship management with comprehensive CRUD operations, file upload handling, and advanced filtering capabilities, integrating Laravel Socialite for OAuth authentication and leveraging Inertia.js for seamless SPA-like user experience
 
@@ -105,19 +105,19 @@ This platform streamlines the internship application process by connecting stude
 ---
 
 ## Project Statistics
-- **Lines of Code**: ~5,000+ (excluding vendor dependencies)
-- **Controllers**: 9 (Admin, Company, User sections)
-- **Models**: 9 (User, Company, Admin, Internship, Application, Notifications, etc.)
-- **Database Tables**: 10+
-- **Migrations**: 20+
-- **Vue Components**: 20+ pages/components
-- **Routes**: 40+ defined routes
-- **Authentication Guards**: 3 (multi-guard system)
+- **Controllers**: 9 (distributed across Admin, Company, and User modules)
+- **Models**: 9 (User, Company, Admin, Internship, Application, Notification, and supporting models)
+- **Database Tables**: 7 core tables (users, company, internships, applications, sessions, notifications, etc.)
+- **Database Migrations**: 21 migrations (including schema modifications and relationship management)
+- **Vue Components**: 20 pages/components (authentication, dashboards, profile management)
+- **Routes**: 30+ defined routes (grouped by user role with middleware protection)
+- **Authentication Guards**: 3 separate guards (admin, company, user)
 
-## Suggested Project Repositories & Links
-- GitHub Repository: [Your Repository Link]
-- Live Demo: [If deployed]
-- Documentation: Available in README.md
+## Suggested Project Links for Resume
+When including this project on your resume, you may want to add:
+- **GitHub Repository**: Link to your repository (e.g., `github.com/username/internship-project`)
+- **Live Demo**: If you've deployed the application (optional but recommended)
+- **Documentation**: Reference to README.md or project documentation
 
 ---
 
